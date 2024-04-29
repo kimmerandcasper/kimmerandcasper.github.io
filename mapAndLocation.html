@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great Adventure</title>
     <style>
-        /* Add styles here */
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        img.logo {
+            width: 50px; /* Set width for the logo */
+            height: 50px; /* Set height for the logo */
+            position: fixed; /* Fixed position to stay in place while scrolling */
+            top: 10px; /* Distance from the top of the viewport */
+            left: 10px; /* Distance from the left of the viewport */
+            cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+        }
+        img.map {
+            width: 200px; /* Initial size for the map */
+            height: 200px;
+            margin: 20px auto; /* Auto centers the map, with margin top and bottom */
+            transition: transform 0.3s ease; /* Smooth transition for zoom */
+        }
+        img.map:active, img.map:focus {
+            transform: scale(1.5); /* Scale up size to 1.5 times on click */
         }
         table {
             width: 100%;
@@ -19,13 +38,16 @@
             padding: 8px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #333;
         }
     </style>
 </head>
 <body>
+    <a href="https://kimmerandcasper.com">
+        <img src="GreatAdventure.png" alt="Navigate Home" class="logo">
+    </a>
     <h1>The Great Adventure</h1>
-    <img src="map.jpeg" alt="Descriptive text about your image here">
+    <img src="map.jpeg" alt="Descriptive text about the image" class="map">
     <table>
         <thead>
             <tr>

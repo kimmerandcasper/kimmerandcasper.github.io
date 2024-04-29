@@ -12,6 +12,14 @@
             background-color: black; /* Black background */
             color: white; /* White text */
         }
+        img.logo {
+            width: 50px; /* Set width for the logo */
+            height: 50px; /* Set height for the logo */
+            position: fixed; /* Fixed position to stay in place while scrolling */
+            top: 10px; /* Distance from the top of the viewport */
+            left: 10px; /* Distance from the left of the viewport */
+            cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+        }
         img.map {
             width: 200px; /* Map image size adjusted */
             height: 200px;
@@ -48,6 +56,9 @@
     </style>
 </head>
 <body>
+    <a href="https://kimmerandcasper.com">
+        <img src="GreatAdventure.png" alt="Kimmer and Casper Logo" class="logo">
+    </a>
     <div class="title">The Great Adventure</div>
     <img src="map.jpeg" alt="Map" class="map">
     <div class="content">
