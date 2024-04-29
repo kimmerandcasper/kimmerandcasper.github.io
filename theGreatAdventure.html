@@ -5,120 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great Adventure</title>
     <style>
-        /* Add styles here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, serif;
+            text-align: center;
+            padding: 20px;
+            background-color: black; /* Black background */
+            color: white; /* White text */
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        img.map {
+            width: 200px; /* Map image size adjusted */
+            height: 200px;
+            margin-top: 20px;
         }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
+        button {
+            display: block; /* Ensures that buttons are stacked */
+            width: 250px; /* Button width */
+            padding: 15px 10px; /* Button padding */
+            margin: 30px auto; /* Center button and add space around */
+            background-color: white; /* Button background color */
+            color: black; /* Button text color */
+            border: 1px solid black; /* Border for button */
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Georgia, serif;
+            font-size: 18px;
         }
-        th {
-            background-color: #f2f2f2;
+        button:hover {
+            background-color: #f8f8f8; /* Lighter shade for hover */
+            border-color: #333; /* Darker border on hover */
+        }
+        .title {
+            font-size: 24px; /* Larger font size for the title */
+            font-weight: bold; /* Bold font weight */
+            margin-bottom: 20px; /* Space below the title */
+        }
+        .content {
+            font-size: 18px; /* Content font size */
+            margin: 20px auto; /* Centering content */
+            max-width: 800px; /* Max width for content */
+            line-height: 1.6; /* Line height for better readability */
         }
     </style>
 </head>
 <body>
-    <h1>The Great Adventure</h1>
-    <img src="map.jpeg" alt="Descriptive text about your image here">
-    <table>
-        <thead>
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>WA: Richland - start</td><td></td></tr>
-            <tr><td>ID: Boise Idaho</td><td>4h</td></tr>
-            <tr><td>ID: Twin Falls</td><td>2h</td></tr>
-            <tr><td>UT: Salt Lake City</td><td>3h</td></tr>
-            <tr><td>WY: Rock Springs</td><td>2h</td></tr>
-            <tr><td>WY: Gillette</td><td>5h</td></tr>
-            <tr><td>ND: Valley City</td><td>6h</td></tr>
-            <tr><td>ND: Fargo</td><td>1.5h</td></tr>
-            <tr><td>ND: Valley City</td><td>1.5h</td></tr>
-            <tr><td>SD: Sioux Falls</td><td>4h</td></tr>
-            <tr><td>NE: Omaha</td><td>2.5h</td></tr>
-            <tr><td>IA: Des Moines</td><td>2h</td></tr>
-            <tr><td>MN: Minneapolis</td><td>3.5h</td></tr>
-            <tr><td>WI: Madison</td><td>4h</td></tr>
-            <tr><td>WI: Green Bay</td><td>2.5h</td></tr>
-            <tr><td>WI: Milwaukee - stop by Kenosha</td><td>2h</td></tr>
-            <tr><td>IL: Chicago</td><td>1.5h</td></tr>
-            <tr><td>IL: Champaign</td><td>2h</td></tr>
-            <tr><td>IN: Indianapolis</td><td>2h</td></tr>
-            <tr><td>MI: Grand Rapids</td><td>4h</td></tr>
-            <tr><td>MI: Flint</td><td>1.5h</td></tr>
-            <tr><td>MI: Detroit</td><td>1.5h</td></tr>
-            <tr><td>MI: Dearborn</td><td>15mins</td></tr>
-            <tr><td>MI: Ann Arbor</td><td>1h</td></tr>
-            <tr><td>OH: Cleveland</td><td>3h</td></tr>
-            <tr><td>OH: Columbus</td><td>5h</td></tr>
-            <tr><td>OH: Cincinnati</td><td>2h</td></tr>
-            <tr><td>KY: Owenton</td><td>2h</td></tr>
-            <tr><td>KY: Corbin</td><td>3h</td></tr>
-            <tr><td>TN: Knoxville</td><td>1.5h</td></tr>
-            <tr><td>WV: Charleston (may stop in Fayetteville)</td><td>5h</td></tr>
-            <tr><td>PA: Pittsburgh</td><td>3.5h</td></tr>
-            <tr><td>PA: Erie</td><td>2h</td></tr>
-            <tr><td>NY: Buffalo - Niagara Falls</td><td>2h</td></tr>
-            <tr><td>NY: Ithaca</td><td>3h</td></tr>
-            <tr><td>NY: Albany</td><td>3h</td></tr>
-            <tr><td>VT: Woodstock</td><td>3h</td></tr>
-            <tr><td>ME: Portland</td><td>4h</td></tr>
-            <tr><td>MA: Boston</td><td>3h</td></tr>
-            <tr><td>MA: Plymouth Rock</td><td>1.5h</td></tr>
-            <tr><td>RI: Providence</td><td>1.5h</td></tr>
-            <tr><td>CT: Hartford</td><td>2h</td></tr>
-            <tr><td>NJ: Princeton</td><td>4.5h</td></tr>
-            <tr><td>PA: Philadelphia (see Trenton for crossing the Delaware)</td><td>1.5h</td></tr>
-            <tr><td>NJ: Atlantic City</td><td>1.5h</td></tr>
-            <tr><td>DE: Wilmington</td><td>1h</td></tr>
-            <tr><td>MD: Baltimore</td><td>1.5h</td></tr>
-            <tr><td>DC: Washington</td><td>1.5h</td></tr>
-            <tr><td>VA: Richmond</td><td>2.5h</td></tr>
-            <tr><td>VA: Norfolk</td><td>1.5h</td></tr>
-            <tr><td>NC: Wilmington</td><td>4.5h</td></tr>
-            <tr><td>NC: Charlotte</td><td>4h</td></tr>
-            <tr><td>GA: Savannah</td><td>2.5h</td></tr>
-            <tr><td>FL: Jacksonville</td><td>2.5h</td></tr>
-            <tr><td>FL: Miami</td><td>6h</td></tr>
-            <tr><td>FL: Tampa</td><td>6h</td></tr>
-            <tr><td>FL: Tallahassee</td><td>5h</td></tr>
-            <tr><td>AL: Montgomery</td><td>4h</td></tr>
-            <tr><td>AL: Birmingham</td><td>1.5h</td></tr>
-            <tr><td>MS: Jackson</td><td>4h</td></tr>
-            <tr><td>LA: New Orleans</td><td>3h</td></tr>
-            <tr><td>LA: Lafayette</td><td>2.5h</td></tr>
-            <tr><td>LA: Monroe</td><td>3.5h</td></tr>
-            <tr><td>AR: Little Rock</td><td>4h</td></tr>
-            <tr><td>AR: Fort Smith</td><td>3.5h</td></tr>
-            <tr><td>MO: Springfield</td><td>3.5h</td></tr>
-            <tr><td>MO: Kansas City</td><td>3h</td></tr>
-            <tr><td>KS: Wichita</td><td>3.5h</td></tr>
-            <tr><td>OK: Oklahoma City</td><td>3h</td></tr>
-            <tr><td>TX: Dallas</td><td>3.5h</td></tr>
-            <tr><td>TX: Houston</td><td>4h</td></tr>
-            <tr><td>TX: Austin</td><td>3h</td></tr>
-            <tr><td>TX: Waco</td><td>2h</td></tr>
-            <tr><td>TX: Dallas</td><td>2h</td></tr>
-            <tr><td>TX: Abilene</td><td>3h</td></tr>
-            <tr><td>TX: El Paso</td><td>6h</td></tr>
-            <tr><td>NM: Albuquerque</td><td></td></tr>
-            <tr><td>CO: Denver</td><td>6.5h</td></tr>
-            <tr><td>UT: Salt Lake City</td><td>8h</td></tr>
-            <tr><td>NV: Las Vegas</td><td>7h</td></tr>
-            <tr><td>CA: Sacramento</td><td>8h</td></tr>
-            <tr><td>OR: Medford</td><td>5h</td></tr>
-            <tr><td>OR: Portland</td><td>4.5h</td></tr>
-            <tr><td>WA: Richland - Finish</td><td>4h</td></tr>
-        </tbody>
-    </table>
+    <div class="title">The Great Adventure</div>
+    <img src="map-image.png" alt="Map" class="map">
+    <div class="content">
+        My service dog, Casper, and I are going to go on a great adventure around the United States of America; a spiritual journey during which I plan to study the power of prayer for WordFlock.com and find meaning in my life after battling cancer twice. I plan on selling my most valuable possessions, leaving from Richland, and begging for gas from station to station as I pray with people and document the affect that prayer has on my life and others.
+    </div>
+    <button onclick="window.location.href='map-destinations.html';">Map and Destinations</button>
+    <button onclick="window.location.href='test-run.html';">Test Run</button>
 </body>
 </html>
