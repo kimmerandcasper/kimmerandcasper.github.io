@@ -11,38 +11,40 @@
             background-color: black;
             color: white;
         }
-        img.logo, img.map {
-            width: 50px; /* Adjusted for logo */
-            height: 50px; /* Same height for consistency */
-            position: fixed; /* Fixed position to stay in place while scrolling */
-            top: 10px; /* Distance from the top of the viewport */
-            left: 10px; /* Distance from the left of the viewport */
-            cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+        img.logo {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
         }
         img.map {
-            width: 200px; /* Set width for the map */
-            height: 200px; /* Set height for the map */
-            margin-top: 60px; /* Space above the map */
-            position: static; /* Normal flow of the document */
-            cursor: zoom-in; /* Cursor indicates that the image can be zoomed */
+            width: 200px;
+            height: 200px;
+            margin-top: 60px;
+            cursor: zoom-in;
+            display: block; /* Ensures the map is a block-level element */
+            margin-left: auto;
+            margin-right: auto;
         }
         .button {
-            background-color: #555; /* Button background color */
-            color: white; /* Text color */
-            border: none; /* No border */
-            padding: 10px 20px; /* Padding around the text */
-            text-align: center; /* Centered text */
-            text-decoration: none; /* No underline */
-            display: inline-block; /* Ensures the button does not break onto a new line */
-            font-size: 16px; /* Text size */
-            margin: 20px 2px; /* Margin around the button */
-            cursor: pointer; /* Cursor becomes a pointer on hover */
-            border-radius: 5px; /* Rounded corners */
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block; /* Ensures the button is a block-level element and not inline */
+            font-size: 16px;
+            margin: 20px auto; /* Centers the button and adds margin on top and bottom */
+            cursor: pointer;
+            border-radius: 5px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px; /* Space above the table */
+            margin-top: 20px;
         }
         th, td {
             border: 1px solid #dddddd;
@@ -60,7 +62,7 @@
     </a>
     <h1>Trial Run</h1>
     <img src="Richland2Yakima.png" alt="Map of the trial run route" class="map">
-    <!-- Button below the map image -->
+    <br> <!-- Adds a line break to ensure space between the map and the button -->
     <a href="https://wordflock.com/yakimaTrial.html" class="button">TRIAL RESULTS</a>
     <div class="description">
         Casper and I are going to do a trial run this week, pushing my dead motorcycle to the nearest gas station, praying, begging for gas money, going to the next town my motorcycle can reach (hopefully Yakima), praying again and finding someone to pray with, begging for gas money to make it to Ellensburg, finding someone to pray with there, then doing the same thing to return back to Richland. If all fails, I have a $20 back up bill from church that will get me and Casper home safely. Mileage distance between Richland and Ellensburg is approximately 115 miles, and the round trip is about 230 miles.
